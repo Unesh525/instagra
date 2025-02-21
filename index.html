@@ -184,35 +184,86 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
-@media (max-width: 768px) {
+        /* Default Styles (for larger screens) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-        .container {
-            width: 90%;
-        }
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
 
-        input {
-            width: 100%;
-        }
+/* Media Queries for Responsive Design */
 
-        header {
-            flex-direction: column;
-        }
-
-        h1 {
-            margin-left: 0;
-            margin-top: 20px;
-        }
-        .modal{
-            left: 1rem;
-            top: 3rem;
-            width: 250px;
-
-        }
-        .login-form input {
-            width: 12rem;
-        }
-      
+/* Extra small devices (phones) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
     }
+
+    body {
+        font-size: 14px;
+    }
+    .modal {
+        width: 90%;
+        left:2%;
+    }
+
+    .login-form input {
+        width: 90%;
+    }
+}
+
+/* Small devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .container {
+        width: 85%;
+    }
+    body {
+        font-size: 14px;
+    }
+    .modal {
+        width: 90%;
+        left:2%;
+    }
+
+    .login-form input {
+        width: 90%;
+    }
+
+}
+
+/* Medium devices (laptops, 768px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+    body {
+        font-size: 16px;
+    }
+    .modal {
+        width: 90%;
+        left:2%;
+    }
+    .login-form input {
+        width: 90%;
+    }
+}
+
+/* Large devices (desktops, 1024px and above) */
+@media only screen and (min-width: 1024px) {
+    
+    
+}
+
+
 
 </style>
 <div id="overlay">
